@@ -1,0 +1,45 @@
+
+h1 {
+    text-align: center;
+    vertical-align: center;
+    
+    background-color: rgb(99, 53, 160);
+    color: rgba(248, 244, 130, 0.884);
+    font-style: initial;
+    font-size: 68px;
+    padding-bottom: 12px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    width: 250px;
+    background-color: #3868f9;
+color: rgb(248, 300, 130,0.884);
+    min-height: 950px;
+}
+
+li a {
+    display: block;
+    color: rgb(183, 222, 241);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li b {
+    background-color: rgb(38, 249, 19);
+    color: rgb(233, 230, 238);
+    padding: 20px;
+    width: 200px;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: rgb(255, 255, 255);
+    height: 40px;
+}

@@ -1,0 +1,36 @@
+<div class="bg">
+
+    <body class="Head">
+        <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+    </body>
+    <br>
+    <div style="text-align: center; background-color: brown; color: cornsilk; font-size: large; font: bolder; height: 50px;font-size: 30px;">PaAYMENT</div>
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <th scope="col">PNR No</th>
+                <th scope="col">Train name</th>
+                <th scope="col">Passenger Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Berth Type</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let trai of train; let i=index">
+                    <td *ngIf="i>=train.length -1">{{trai.id}}</td>
+                    <td *ngIf="i>=train.length -1">{{trai.train}}</td>
+                    <td *ngIf="i>=train.length -1">{{trai.name}}</td>
+                    <td *ngIf="i>=train.length -1">{{trai.age}}</td>
+                    <td *ngIf="i>=train.length -1">{{trai.gender}}</td>
+                    <td *ngIf="i>=train.length -1">{{trai.berth}}</td>
+                    <button *ngIf ="i>=train.length -1" class="btn" title="Print Screen" alt="Print Screen" onclick="window.print();"    target="_blank" style="cursor:pointer;">CLICK HERE TO PRINT TICKET!</button> 
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+    
+    <button class="btn btn-success pbutton"><a HREF="http://localhost:9069/" class="btn btn-danger ">Pay Amount</a></button> 
+        <button class="ddd  " routerLink="/user">Back to User</button>
+     
+</div>

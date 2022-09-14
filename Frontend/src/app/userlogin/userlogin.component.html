@@ -1,0 +1,23 @@
+<div class="bg">
+
+    <body class="Head">
+        <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+    </body>
+
+        <div class="container">
+            
+            <form  [formGroup]="adminlog" (ngSubmit)="validate()">
+                <h2>Login </h2><br>
+                <div class="class formgroup">
+                    <label for="">Username :</label>
+                    <input type="text" class="form-control"  required formControlName="username">
+                </div>
+                <div class="class formgroup">
+                    <label for="">Password :</label>
+                    <input type="password" class="form-control" required formControlName="password">
+                </div>
+                <input type="submit" class="btn" value="Login">
+            </form>
+
+        </div>
+    </div>

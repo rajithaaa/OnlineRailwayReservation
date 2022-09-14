@@ -1,0 +1,76 @@
+<div class="bg">
+
+    <body class="Head">
+        <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+
+    </body>
+        <div class="container">
+            
+            <form  [formGroup]="adminlog" (ngSubmit)="validate()">
+                <h2>Admin Login </h2><br>
+                <div class="class formgroup">
+                    <label for="">Username :</label>
+                    <input type="text" class="form-control"  required formControlName="username">
+                </div>
+                <div class="class formgroup">
+                    <label for="">Password :</label>
+                    <input type="password" class="form-control" required formControlName="password">
+                </div>
+                <input type="submit" class="btn" value="AdminLogin">
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card border-0 shadow rounded-3 my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <h5 class="card-title text-center mb-5 fw-light fs-5">ADMIN LOG-IN</h5>
+                        <form [formGroup]="adminlog" (ngSubmit)="validate()">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" formControlName="username">
+                                <b><label for="floatingInput">User Name</label></b> -->
+                                <!-- <span style="color: red;" class="error"> Username is required
+                   </span> -->
+                            <!-- </div>
+                            <br>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" formControlName="password">
+                               <b> <label for="floatingPassword">Password</label></b> -->
+                                <!-- <span style="color: red;" class="error"> Password is required
+                   <!</span> -->
+                            <!-- </div>
+                            <br>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>  -->

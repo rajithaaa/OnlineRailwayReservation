@@ -1,0 +1,59 @@
+<div class="bg">
+    <div class="Head">
+    <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+       
+        <form action="/action_page.php" style="margin-top: 30px;">
+          
+          <div style="display: flex; width: 100%;">
+            <div class="form-group" style="display: flex;">
+             
+            </div>
+              <div class="form-group" style="display: flex;"> 
+             
+              </div>
+          </div>
+        </form>
+        <br>
+        <br>
+    <div class="generic-container">
+    <div class="panel panel-default">
+      <h2 style="text-align: center; font:bold; color: white; background: linear-gradient(135deg, #71b7e6, #9b59b6);">LIST OF TRAINS AVAILABLE</h2><br><br>
+      <div class="row">
+    
+   
+      <div class="tablecontainer">
+        <table class="table table-dark">
+          <thead class="thead-dark">
+           
+          <tr>
+            <th>TRAIN ID</th>
+            <th>TRAIN NAME</th>
+            <th>FROM</th>
+            <th>TO</th>
+            <th>NUMBER OF BERTHS</th>
+            <th>FARE</th>
+          </tr>
+          
+          </thead>
+          <tbody>
+          <tr *ngFor="let trai of trains">
+            <td><span>{{trai.trainid}}</span></td>
+            <td><span>{{trai.train_name}}</span></td>
+            <td><span>{{trai.from}}</span></td>
+            <td><span>{{trai.to}}</span></td>
+            <td><span>{{trai.berths}}</span></td>
+            <td><span>{{trai.fare}}</span></td>
+            
+          </tr>
+          
+          </tbody>
+         
+        </table>
+      </div>
+      <div class="haa"><br><button class="u" routerLink="/home">Home</button></div>
+    </div>
+    
+  
+  
+  
+  

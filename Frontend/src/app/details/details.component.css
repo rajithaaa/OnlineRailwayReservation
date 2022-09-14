@@ -1,0 +1,97 @@
+h1 {
+    text-align: center;
+    vertical-align: center;
+    background: linear-gradient(to right, rgb(11, 182, 235), rgb(240, 244, 245));
+    color: rgb(1, 19, 19);
+    font-style: initial;
+    font-size: 64px;
+    padding-bottom: 12px;
+}
+
+.bg {
+    background: url(https://images.unsplash.com/photo-1575476445152-d6a38db3506a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+    /* background: brown; */
+     /* background: linear-gradient(to right, rgb(186, 190, 192), rgb(240, 244, 245)); */
+    padding-bottom: 40%;
+}
+
+.btn {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    
+}
+.btn-cli{
+    height: 30px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
+}
+
+.cde {
+    width: 100px;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    background-color: red;
+
+
+}
+.container{
+    display: block;
+     align-items: center; 
+    justify-content: center;
+    text-align: center;
+   
+    
+}
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 1200px;
+    border-radius: 5px 5px 0 0;
+
+}
+.table thead tr{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: rgb(250, 17, 17);
+    text-align: left;
+    font-weight: bold;
+}
+.table th,table td{
+    padding: 12px 15px;
+}
+.table tbody tr{
+    border-bottom: 1px solid #dddd;
+
+}
+.table tbody tr :nth-of-type(even) {
+    background-color: #f3f3f3;
+
+
+}
+/* .table tbody tr :last-of-type{
+    border-bottom: 2px solid  #9b59b6;
+    
+
+} */
+tbody tr td{
+ text-align: center;
+ background-color: rgb(245, 240, 240);
+}
+.container{
+    margin-left: 500px;
+}
+.row{
+    margin-right: 900px;
+
+}
+input{
+    width: 180px ;
+    height: 30px;
+}

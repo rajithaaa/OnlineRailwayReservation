@@ -1,0 +1,47 @@
+<div class="bg">
+    <div class="Head">
+        <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+        <div class="generic-container">
+            <div class="panel panel-default">
+                <div class="row">
+                    <h2 style="text-align: center; font:bold; background-color: rgb(248, 96, 157); color: honeydew;">LIST OF TRAINS </h2>
+                </div>
+            </div>
+            <div class="tablecontainer">
+                <table class="table ">
+                    <br>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>TRAIN ID</th>
+                            <th>TRAIN NAME</th>
+                            <th>FROM</th>
+                            <th>TO</th>
+                            <th>NUMBER OF BERTHS</th>
+                            <th>FARE</th>
+                            <th>ADMIN OPERATIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let trai of trains">
+                            <td><span>{{trai.trainid}}</span></td>
+                            <td><span>{{trai.train_name}}</span></td>
+                            <td><span>{{trai.from}}</span></td>
+                            <td><span>{{trai.to}}</span></td>
+                            <td><span>{{trai.berths}}</span></td>
+                            <td><span>{{trai.fare}}</span></td>
+                            <th><button class="d" (click)="deleteTrains(trai.trainid)" onclick="window.location.reload()">DELETE</button><br><br>
+                                <button class="up" routerLink="/update/{{trai.trainid}}">UPDATE </button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="t">
+                    <button class="y" routerLink="/add">ADD MORE TRAINS </button>
+                    <div class="haa"><br>
+                        <button class="uu" routerLink="/home">LOG OUT </button></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

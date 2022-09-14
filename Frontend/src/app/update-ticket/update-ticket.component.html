@@ -1,0 +1,192 @@
+<p>update-ticket works!</p>
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+<div class="Head">
+    <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+
+
+</div>
+<div class="container">
+    <div class="title">  Update Ticket Here</div>
+        <div class="content">
+              <form  [formGroup]="editTicket" (ngSubmit)="collection()">
+                  <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Id</span>
+                        <input type="text" class="form-control" id="floatingInput" formControlName="id" required>
+                    </div>
+                      <div class="input-box">
+                          <span class="details"> name </span>
+                          <input type="text" class="form-control" id="floatingInput" formControlName="name" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details">Enter Email</span>
+                          <input type="email" class="form-control" id="floatingInput" formControlName="Email" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details">Age</span>
+                          <input type="number" class="form-control" id="floatingInput" formControlName="age" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details"> Address></span>
+                          <input type="text" class="form-control" id="floatingInput" formControlName="Address" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details">TrainName</span>
+                          <input type="text"  class="form-control" id="floatingInput" formControlName="trainName" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details"> date</span>
+                          <input type="text" class="form-control" id="floatingInput" formControlName="date" required>
+                      </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details"> Berth</span>
+                        <input type="text" class="form-control" placeholder="Enter berth" formControlName="berth"  required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Source</span>
+                        <!-- <input type="text" lass="form-control" placeholder="Enter the Train name" formControlName="train" required> -->
+                        <select type="select" class="form-control" placeholder="Enter the Start station" formControlName="startStation">
+                            <option></option>
+                            <option *ngFor="let trai of trains">
+                                {{trai.from}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Destination </span>
+                        <!-- <input type="text" lass="form-control" placeholder="Enter the Train name" formControlName="train" required> -->
+                        <select type="select" class="form-control" placeholder="Enter End station" formControlName="endStation">
+                            <option></option>
+                            <option *ngFor="let trai of trains">
+                                {{trai.to}}
+                            </option>
+                        </select>
+                    </div>
+    
+                  <div class="d-grid">
+                    <button type="submit" class="u"   >Update</button>
+                    
+                    <button class="d" routerLink="/Seats">View</button>
+                </div>
+                <!-- <div class="button">
+                    <input type="submit" value="Update">
+                </div> -->
+                 
+              </form>
+             
+           </div>
+           
+      </div>
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card border-0 shadow rounded-3 my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <h5 class="card-title text-center mb-5 fw-light fs-5">UPDATE TRAINS HERE</h5> -->
+<!-- 
+                        <form [formGroup]="editResto" (ngSubmit)="collection()">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInput" formControlName="trainid">
+                                <label for="floatingInput">Id</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="editResto.controls.train_id.touched && editResto.controls.train_id.errors"> Train Number is required
+                  </span> -->
+                            <!-- </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" formControlName="train_name">
+                                <label for="floatingInput">Train Name</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="editResto.controls.train_name.touched && editResto.controls.train_name.errors"> Train name is required
+                  </span> -->
+
+
+<!-- 
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" formControlName="from">
+                                <label for="floatingInput">From</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="editResto.controls.from.touched && editResto.controls.from.errors"> Train starting point is required
+                  </span> -->
+
+
+                            <!-- </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" formControlName="to">
+                                <label for="floatingInput">To</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="editResto.controls.to.touched && editResto.controls.to.errors"> Train destination is required
+                  </span>
+ -->
+
+                            <!-- </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInput" formControlName="berths">
+                                <label for="floatingInput">Available Seats</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="editResto.controls.berths.touched && editResto.controls.berths.errors"> Available seats is required
+                  </span> -->
+
+
+                            <!-- </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInput" formControlName="fare">
+                                <label for="floatingInput">Fare</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="editResto.controls.fare.touched && editResto.controls.fare.errors"> Fare is required
+                  </span> -->
+
+<!-- 
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                                <br>
+                                <button class="d" routerLink="/Trains" class="btn btn-danger">View</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> -->

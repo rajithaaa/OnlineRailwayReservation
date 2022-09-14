@@ -1,0 +1,133 @@
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+<body class="bg">
+    <div style= "background-image:url('https://images.unsplash.com/photo-1575476445152-d6a38db3506a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">; 
+    <div class="Head">
+       
+    <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+    
+</div>
+<br>
+
+<div class="container">
+    <div class="title">  Add Trains Here</div>
+        <div class="content">
+              <form  [formGroup]="addTrains" (ngSubmit)="collectTrains()">
+                  <div class="user-details">
+                      <div class="input-box">
+                          <span class="details"> ID </span>
+                          <input type="number" class="form-control" id="floatingInput" formControlName="trainid" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details">Train Name</span>
+                          <input type="text" class="form-control" id="floatingInput" formControlName="train_name" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details">From</span>
+                          <input type="text" class="form-control" id="floatingInput" formControlName="from" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details"> To</span>
+                          <input type="text" class="form-control" id="floatingInput" formControlName="to" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details">Available Seats</span>
+                          <input type="number" type="number" class="form-control" id="floatingInput" formControlName="berths" required>
+                      </div>
+                      <div class="input-box">
+                          <span class="details"> Fare</span>
+                          <input type="number" class="form-control" id="floatingInput" formControlName="fare" required>
+                      </div>
+                      
+                      
+                  </div>
+                 
+                  <div class="button">
+                      <input type="submit" value="AddTrains">
+                  </div>
+                
+              </form>
+           </div>
+      </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+      <!-- <body> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card border-0 shadow rounded-3 my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <h3 class="card-title text-center mb-5 fw-light fs-5">ADD TRAINS HERE</h3>
+                        <form [formGroup]="addTrains" (ngSubmit)="collectTrains()">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInput" formControlName="trainid">
+                                <label for="floatingInput">Id</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="addTrains.controls.train_id.touched && addTrains.controls.train_id.errors"> Train Number is required
+                  </span> -->
+                            <!-- </div>
+                            <br>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" formControlName="train_name">
+                                <label for="floatingInput">Train Name</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="addTrains.controls.train_name.touched && addTrains.controls.train_name.errors"> Train name is required
+                  </span> -->
+
+                            <!-- </div>
+                            <br>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" formControlName="from">
+                                <label for="floatingInput">From</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="addTrains.controls.from.touched && addTrains.controls.from.errors"> Train starting point is required
+                  </span> -->
+
+                            <!-- </div>
+                            <br>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" formControlName="to">
+                                <label for="floatingInput">To</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="addTrains.controls.to.touched && addTrains.controls.to.errors"> Train destination is required
+                  </span> -->
+
+                            <!-- </div>
+                            <br>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInput" formControlName="berths">
+                                <label for="floatingInput">Available Seats</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="addTrains.controls.berths.touched && addTrains.controls.berths.errors"> Available seats is required
+                  </span> -->
+
+                            <!-- </div>
+                            <br>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInput" formControlName="fare">
+                                <label for="floatingInput">Fare</label> -->
+                                <!-- <span style="color: red;" class="error" *ngIf="addTrains.controls.fare.touched && addTrains.controls.fare.errors"> Fare is required
+                  </span> -->
+
+                            <!-- </div>
+                            <br>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+<!-- </body> -->

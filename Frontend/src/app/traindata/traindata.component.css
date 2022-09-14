@@ -1,0 +1,112 @@
+h1{
+    text-align: center;
+    vertical-align: center ;
+    height: 150px;
+    font: bolder;
+    background: linear-gradient(to right, rgb(108, 188, 212), rgb(240, 244, 245));
+    color: rgb(1, 19, 19);
+    font-size: 40px;
+    padding-top: 90px;
+    padding-bottom: 12px;
+  }
+
+.bg {
+    background: rgb(32, 36, 30);
+    background: url(https://images.unsplash.com/photo-1614242990605-9059fbb42191?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+    padding-bottom: 1%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+/* input {
+    margin: 0 15px;
+} */
+
+.haa {
+    text-align: center;
+    padding: 20px;
+}
+.u{
+    width: 70px;
+   height: 40px;
+  font-weight: bold;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
+   
+}
+
+/* .u{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(22, 36, 36);
+    color: white;
+    border:0 ;
+    margin-top: 20px;
+    box-shadow: 4px 4px lightgrey;
+    border-radius: 5px;
+
+} */
+
+
+ .row {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+ .generic-container {
+    margin-top: -50px;
+}  
+.tablecontainer{
+    display: block;
+     align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin-top: -50px;
+    width: 100%;
+    
+   
+    
+}
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+
+}
+.table thead tr{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: rgb(18, 133, 248);
+    text-align: left;
+    font-weight: bold;
+}
+.table th,table td{
+    padding: 12px 15px;
+}
+.table tbody tr{
+    border-bottom: 1px solid rgba(154, 214, 252, 0.867);
+
+}
+.table tbody tr :nth-of-type(even) {
+    background-color: #011012e9;
+
+
+}
+/* .table tbody tr :last-of-type{
+    border-bottom: 2px solid  #9b59b6;
+    
+
+} */
+tbody tr td{
+ text-align: center;
+ background-color: rgba(2, 20, 24, 0.982);
+}
+.tablecontainer{
+    margin-left: 0px;
+}
+

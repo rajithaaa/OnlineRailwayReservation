@@ -1,0 +1,67 @@
+<div class="bg">
+
+    <body class="Head">
+        <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+    </body>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div id="custom-search-input">
+                <div class="input-grout col-md-12" style="text-align:center">
+                    <input type="text" class="search-query form-control" placeholder="Enter the PNR number to view your TICKET" name="id" [(ngModel)]="id" />
+                    <br>    
+                    <span class="input-hroup-btn"><br>
+              <button class="btn " type="button" (click)="getbookbyid()">search
+                <span class=" glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <table class="table ">
+        <thead>
+            <tr>
+                <th>PNR NUMBER</th>
+                <th>PASSENGER NAME</th>
+                <th>EMAIL-ID</th>
+                <th>AGE</th>
+                <th>GENDER</th>
+                <th>ADDRESS</th>
+                <th>TRAIN</th>
+                <th>DATE</th>
+                <th>SOURCE STATION</th>
+                <th>DESTINATION STATION</th>
+                <!-- <th>CLASS</th>
+                <th>CREDIT NUMBER</th>
+                <th>BANK NAME</th> -->
+            </tr>   
+        </thead>
+        <tbody>
+            <tr *ngIf="Seats">
+                <td><span>{{Seats.id}}</span></td>
+                <td><span>{{Seats.name}}</span></td>
+                <td><span>{{Seats.email}}</span></td>
+                <td><span>{{Seats.age}}</span></td>
+                <td><span>{{Seats.gender}}</span></td>
+                <td><span>{{Seats.address}}</span></td>
+                <td><span>{{Seats.train}}</span></td>
+                <td><span>{{Seats.date}}</span></td>
+                <td><span>{{Seats.startStation}}</span></td>
+                <td><span>{{Seats.endStation}}</span></td>
+                <td><span>{{Seats.berth}}</span></td>
+                <!-- <td><span>{{Seats.credit}}</span></td>
+                <td><span>{{Seats.bankname}}</span></td> -->
+                <th><button class="cde"><i (click)="deleteResto(Seats.id)"> CANCEL TICKET</i></button>
+                    
+
+                    
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button class="btn-cli" title="Print Screen" alt="Print Screen" onclick="window.print();" target="_blank" style="cursor:pointer;">CLICK HERE TO PRINT TICKET!</button>
+</div>
